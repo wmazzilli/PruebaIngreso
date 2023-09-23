@@ -1,11 +1,11 @@
-Feature: Join today to Utest.
+  Feature: Join today to Utest.
            Verify that a user can successfully complete the registration process on the uTest.com page,
            ensuring that all their data is correct and complete.
-
-
 
 
     Scenario: Press click on join today
       Given The user must be on the main utest.com page
       When  The user clicks on join today
-      Then  The user should start creating their account on utest.com
+      Then  The user should see the signup page on utest.com
+
+    #Minuto 30
