@@ -36,17 +36,15 @@ dependencies {
     implementation "net.serenity-bdd:serenity-junit:$rootProject.ext.serenityVersion"
     implementation "net.serenity-bdd:serenity-ensure:$rootProject.ext.serenityVersion"
     implementation "net.serenity-bdd:serenity-cucumber4:$rootProject.ext.serenityCucumberVersion"
-    implementation "net.serenity-bdd:serenity-screenplay-rest:$rootProject.ext.serenityVersion"
-    implementation 'mysql:mysql-connector-java:5.1.6'
-    compileOnly 'org.projectlombok:lombok:1.18.22'
-    annotationProcessor 'org.projectlombok:lombok:1.18.22'
-    testCompileOnly 'org.projectlombok:lombok:1.18.22'
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
-    implementation "co.com.devco.automation:automationDevcoLibrary:$rootProject.ext.automationDevcoVersion"
-
-
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+  //  implementation "net.serenity-bdd:serenity-screenplay-rest:$rootProject.ext.serenityVersion"
+  //  implementation 'mysql:mysql-connector-java:5.1.6'
+  //  compileOnly 'org.projectlombok:lombok:1.18.22'
+  //  annotationProcessor 'org.projectlombok:lombok:1.18.22'
+  //  testCompileOnly 'org.projectlombok:lombok:1.18.22'
+  //  testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+  //  implementation "co.com.devco.automation:automationDevcoLibrary:$rootProject.ext.automationDevcoVersion"
+  //  testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+  //  testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 
 }
 
