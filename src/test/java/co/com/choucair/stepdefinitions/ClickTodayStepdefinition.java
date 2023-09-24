@@ -12,7 +12,7 @@ import net.serenitybdd.screenplay.actors.OnlineCast;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
-public class UserRegisterStepdefinition {
+public class ClickTodayStepdefinition {
 
     @Before
     public void prepareTheActor(){
