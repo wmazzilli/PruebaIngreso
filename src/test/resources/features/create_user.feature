@@ -3,7 +3,6 @@ Feature: Join today to Utest.
   ensuring that all their data is correct and complete.
 
 
-
   @CreateAccount
   Scenario: Create an account in utest
     Given The user must be on the main utest.com page

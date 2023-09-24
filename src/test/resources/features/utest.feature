@@ -1,6 +1,7 @@
   Feature: Join today to Utest.
-           Verify that a user can successfully complete the registration process on the uTest.com page,
-           ensuring that all their data is correct and complete.
+           Press click on join today
+
+
 
       @ClickOnJoinToday
     Scenario: Press click on join today
