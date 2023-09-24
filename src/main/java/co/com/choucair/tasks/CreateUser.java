@@ -1,5 +1,6 @@
 package co.com.choucair.tasks;
 
+import co.com.choucair.helpers.DataGenerator;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
@@ -23,7 +24,7 @@ public class CreateUser implements Task {
                 Click.on(BUTTON_JOIN_TODAY),
                 Enter.theValue("Walberto").into(INPUT_FIRST_NAME),
                 Enter.theValue("Mazzilli").into(INPUT_LAST_NAME),
-                Enter.theValue("prueba@test.com").into(INPUT_EMAIL),
+                Enter.theValue(DataGenerator.getRandomEmail()).into(INPUT_EMAIL),
                 Click.on(SELECT_MONTH_BIRTH),
                 Click.on(SELECT_MONTH_BIRTH_OPTION),
                 Click.on(SELECT_DAY_BIRTH),
@@ -38,10 +39,6 @@ public class CreateUser implements Task {
                 MoveMouse.to(SELECT_CITY).andThen(actions -> actions.click()),
                 WaitUntil.angularRequestsHaveFinished(),
                 Enter.theValue("253417").into(INPUT_POSTAL_CODE),
-                //Click.on(SELECT_COUNTRY),
-                //WaitUntil.angularRequestsHaveFinished(),
-                //Enter.theValue("Colombia").into(SELECT_COUNTRY),
-                //Click.on((SELECT_COUNTRY_OPTION)),
                 Click.on(BUTTON_STEP_2),
                 WaitUntil.angularRequestsHaveFinished(),
                 Click.on(SELECT_MOBILE_DEVICE),
@@ -49,12 +46,16 @@ public class CreateUser implements Task {
                 Click.on(SELECT_MOBILE_MODEL),
                 WaitUntil.angularRequestsHaveFinished(),
                 MoveMouse.to(SELECT_MOBILE_MODEL_OPTION).andThen(actions -> actions.click()),
+                WaitUntil.angularRequestsHaveFinished(),
                 Click.on(SELECT_OPERATING_SYSTEM),
                 MoveMouse.to(SELECT_OPERATING_SYSTEM_OPTION).andThen(actions -> actions.click()),
-                Click.on(BUTTON_STEP_2)
-
-
-
+                Click.on(BUTTON_STEP_2),
+                WaitUntil.angularRequestsHaveFinished(),
+                Enter.theValue("Nicolas32@").into(INPUT_PASSWORD),
+                Enter.theValue("Nicolas32@").into(INPUT_CONFIRM_PASSWORD),
+                Click.on(CHECK_BOX_ACCEPPT_TERMS_USE),
+                Click.on(CHECK_BOX_ACCEPPT_PRIVACY_POLICY),
+                Click.on(BOTTON_COMPLETE_SETUP)
                 );
     }
 

@@ -17,7 +17,6 @@ public class DoClick implements Task {
         actor.attemptsTo(
                 WaitUntil.angularRequestsHaveFinished(),
                 Click.on(BUTTON_JOIN_TODAY)
-               // Ensure.that("").isEmpty()
         );
     }
 

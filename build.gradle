@@ -43,6 +43,7 @@ dependencies {
     testCompileOnly 'org.projectlombok:lombok:1.18.22'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
     implementation "co.com.devco.automation:automationDevcoLibrary:$rootProject.ext.automationDevcoVersion"
+    implementation 'com.github.javafaker:javafaker:1.0.2'
 
 
 }
