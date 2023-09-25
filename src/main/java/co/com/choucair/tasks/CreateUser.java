@@ -12,7 +12,6 @@ import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static co.com.choucair.userinterfaces.Utestform.*;
-import static co.com.choucair.utils.Constantes.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.actions.MoveMouse.*;
 
