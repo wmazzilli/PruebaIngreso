@@ -20,7 +20,4 @@ public class DoClick implements Task {
         );
     }
 
-    public static Performable inJoinToday(){
-        return instrumented(DoClick.class);
-    }
 }

@@ -3,6 +3,7 @@ package co.com.choucair.stepdefinitions;
 import co.com.choucair.interactions.OpenPage;
 import co.com.choucair.questions.ConfirmedRegistration;
 import co.com.choucair.tasks.CreateUser;
+import co.com.choucair.tasks.factories.FillOut;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -16,7 +17,7 @@ public class CreateUserStepdefinition {
     @When("The user completes the utest.com form")
     public void theUserCompletesTheUtestComForm() {
         OnStage.theActorInTheSpotlight().attemptsTo(
-                CreateUser.inPageUtest()
+                FillOut.theFormOfUtest()
         );
     }
 

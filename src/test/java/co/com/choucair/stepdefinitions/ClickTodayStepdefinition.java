@@ -3,6 +3,7 @@ package co.com.choucair.stepdefinitions;
 import co.com.choucair.interactions.OpenPage;
 import co.com.choucair.questions.ValidationOfSignIn;
 import co.com.choucair.tasks.DoClick;
+import co.com.choucair.tasks.factories.FillOut;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -18,7 +19,7 @@ public class ClickTodayStepdefinition {
     @When("The user clicks on join today")
     public void the_user_clicks_on_join_today() {
         OnStage.theActorInTheSpotlight().attemptsTo(
-                DoClick.inJoinToday()
+                FillOut.inTheBottonToday()
         );
     }
     @Then("The user should see the signup page on utest.com")
