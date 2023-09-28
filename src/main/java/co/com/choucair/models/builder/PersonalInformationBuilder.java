@@ -2,7 +2,8 @@ package co.com.choucair.models.builder;
 
 import co.com.choucair.helpers.DataGenerator;
 import co.com.choucair.models.PersonalInformation;
-import javafx.util.Builder;
+import org.apache.commons.lang3.builder.Builder;
+
 
 public class PersonalInformationBuilder implements Builder<PersonalInformation> {
 

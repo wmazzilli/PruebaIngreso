@@ -11,7 +11,6 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 public class OpenPage implements Interaction {
 
     Utestform utestform;
-
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(

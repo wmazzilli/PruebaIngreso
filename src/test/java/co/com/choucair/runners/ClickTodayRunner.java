@@ -1,7 +1,7 @@
 package co.com.choucair.runners;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.SnippetType;
+
+import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 
@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         plugin = {"pretty"},
         features = "src/test/resources/features/utest.feature",
         glue = "co.com.choucair.stepdefinitions",
-        snippets = SnippetType.CAMELCASE,
+        snippets = CucumberOptions.SnippetType.CAMELCASE,
         tags = "@ClickOnJoinToday"
 )
 public class ClickTodayRunner {

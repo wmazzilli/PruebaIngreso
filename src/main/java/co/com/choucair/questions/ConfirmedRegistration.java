@@ -10,9 +10,12 @@ import static co.com.choucair.userinterfaces.Utestform.RECAPTCHA;
 import static co.com.choucair.userinterfaces.Utestform.VALIDATION;
 
 public class ConfirmedRegistration implements Question<Boolean> {
+
     @Override
     public Boolean answeredBy(Actor actor) {
+
         boolean  Bol = VALIDATION.resolveFor(actor).isVisible();
+
         if(Bol){
             return VALIDATION.resolveFor(actor).isVisible();
         }else{

@@ -13,6 +13,7 @@ public class PersonalInformation {
     private String zipCode;
     private String password;
 
+
     public PersonalInformation(PersonalInformationBuilder personalInformationBuilder) {
         this.name = personalInformationBuilder.getName();
         this.lastName = personalInformationBuilder.getLastName();

@@ -7,6 +7,7 @@ public class DataGenerator {
 
     public static Faker faker = new Faker(new Locale("es", "CO"));
 
+
     public static String getRandomEmail() {
         String email = faker.internet().emailAddress().toLowerCase();
         return email;

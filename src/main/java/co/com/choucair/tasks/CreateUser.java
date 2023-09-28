@@ -1,19 +1,15 @@
 package co.com.choucair.tasks;
 
-import co.com.choucair.helpers.DataGenerator;
 import co.com.choucair.models.builder.PersonalInformationBuilder;
 import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.DoubleClick;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static co.com.choucair.userinterfaces.Utestform.*;
-import static net.serenitybdd.screenplay.Tasks.instrumented;
-import static net.serenitybdd.screenplay.actions.MoveMouse.*;
+
 
 public class CreateUser implements Task {
 
